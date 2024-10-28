@@ -13,7 +13,9 @@ export default {
         'open-sans': ['Open Sans', 'sans-serif'],
         'script': ['SignatureScript', 'cursive'],
       },
-
+      screens: {
+        'lg-custom': '900px', // Add custom breakpoint at 900px
+      },
       
     },
   },
