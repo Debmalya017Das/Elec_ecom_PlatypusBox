@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link to="/" className="hover:text-purple-600 hover:underline underline-offset-4 decoration-1 font-montserrat "> Home</Link>
             <Link to="/" className="hover:text-purple-600 hover:underline underline-offset-4 decoration-1 font-montserrat"> Contact </Link>
             <Link to="/" className="hover:text-purple-600 hover:underline underline-offset-4 decoration-1 font-montserrat"> About </Link>
-            <Link to="/" className="hover:text-purple-600 hover:underline underline-offset-4 decoration-1 font-montserrat"> Signup</Link>
+            <Link to="/Signup" className="hover:text-purple-600 hover:underline underline-offset-4 decoration-1 font-montserrat"> Signup</Link>
           </div>
 
           {/* Others  */}

@@ -4,6 +4,10 @@ import { ChevronRight } from 'lucide-react';
 import qr from "../pages/Homepage/home_assets/QR.jpg";
 import play from "../pages/Homepage/home_assets/play.png";
 import appstore from "../pages/Homepage/home_assets/appstore.png"
+import fb from "../pages/Signup/Signup_assets/fb.png"
+import l from "../pages/Signup/Signup_assets/l.png"
+import ig from "../pages/Signup/Signup_assets/ig.png"
+import tw from "../pages/Signup/Signup_assets/tw.png"
 
 const Footer = () => {
   return (
@@ -77,16 +81,16 @@ const Footer = () => {
           </div>
           <div className="flex space-x-4 mt-4">
             <Link to="/facebook" className="hover:text-gray-300">
-              <span className="w-6 h-6 text-xl">f</span>
+              <span className="w-6 h-6 text-xl"><img src={fb} alt="" /></span>
             </Link>
             <Link to="/twitter" className="hover:text-gray-300">
-              <span className="w-6 h-6 text-xl">t</span>
+              <span className="w-6 h-6 text-xl"><img src={tw} alt="" /></span>
             </Link>
             <Link to="/instagram" className="hover:text-gray-300">
-              <span className="w-6 h-6 text-xl">i</span>
+              <span className="w-6 h-6 text-xl"><img src={ig} alt="" /></span>
             </Link>
             <Link to="/linkedin" className="hover:text-gray-300">
-              <span className="w-6 h-6 text-xl">in</span>
+              <span className="w-6 h-6 text-xl"><img src={l} alt="" /></span>
             </Link>
           </div>
         </div>
