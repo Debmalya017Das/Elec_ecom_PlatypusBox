@@ -65,29 +65,32 @@ const Navbar = () => {
             </div>
 
             {/* Wishlist */}
-            <button className="hover:text-purple-600 relative">
+            <Link to="/wishlist"><button className="hover:text-purple-600 relative">
               <Heart className="w-6 h-6" />
-            </button>
+            </button></Link>
 
             {/* Cart */}
-            <button className="hover:text-purple-600 relative">
-              <ShoppingCart className="w-6 h-6" />
+             <Link to="/cart">
+              <button className="hover:text-purple-600 relative">
+             <ShoppingCart className="w-6 h-6" />
               {cartCount > 0 && (
                 <span className="absolute -top-2 -right-2 bg-red-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
                   {cartCount}
                 </span>
               )}
             </button>
+             </Link>
+           
 
             {/* User Profile Dropdown */}
             <div className="relative">
-              <button
+               <button
                 className="hover:text-purple-600 focus:outline-none"
                 onClick={toggleDropdown}
               >
                 <User className="w-6 h-6" />
               </button>
-
+             
               {/* Desktop Dropdown Menu */}
               {isDropdownOpen && (
                 <>
@@ -107,7 +110,7 @@ const Navbar = () => {
                       </div>
                       <div className="bg-white/30">
                         <Link
-                          to="/profile"
+                          to="/account"
                           className="flex items-center px-6 py-3 text-md text-gray-700 hover:bg-white/50 transition-colors"
                         >
                           <UserCircle className="w-4 h-4 mr-3 text-black" />
@@ -232,7 +235,7 @@ const Navbar = () => {
                 </div>
               </div>
               <Link 
-                to="/profile"
+                to="/account"
                 className="block py-2 text-gray-800 hover:text-purple-600"
                 onClick={() => setIsMobileMenuOpen(false)}
               >

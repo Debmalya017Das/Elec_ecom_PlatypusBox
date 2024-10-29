@@ -1,5 +1,4 @@
 import React from 'react';
-
 import CSI from './About_assets/csi.png';
 import DSI from './About_assets/dsi.png';
 import EW from './About_assets/ew.png';
