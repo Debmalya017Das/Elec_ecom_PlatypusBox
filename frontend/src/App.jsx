@@ -11,6 +11,7 @@ import Account from './pages/Account/Account';
 import CartPage from './pages/Cart/Cart';
 import BillingPage from './pages/Billing/Billing';
 import WishlistPage from './pages/Wishlist/Wishlist';
+import ProdDesc from './pages/ProductDesc/ProdDesc';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path="/cart" element={<CartPage/>}/>
             <Route path="/billing" element={<BillingPage/>}/>
             <Route path="/wishlist" element={<WishlistPage/>}/>
+            <Route path="/info" element={<ProdDesc/>}/>
             <Route path="*" element={<Default />} />
           </Routes>
         </div>

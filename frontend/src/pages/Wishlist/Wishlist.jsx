@@ -15,7 +15,7 @@ const wishlistProducts = [
   {
     id: 1,
     image: gucciDuffle,
-    title: "Gucci duffle bag",
+    name: "Gucci duffle bag",
     price: 1150,
     discountedPrice: 980,
     discount: 25,
@@ -26,7 +26,7 @@ const wishlistProducts = [
   {
     id: 2,
     image: cpuCooler,
-    title: 'RGB liquid CPU Cooler',
+    name: 'RGB liquid CPU Cooler',
     price: 1950,
     discountedPrice: null,
     discount: null,
@@ -37,7 +37,7 @@ const wishlistProducts = [
   {
     id: 3,
     image: gamepad,
-    title: 'GP11 Shooter USB Gamepad',
+    name: 'GP11 Shooter USB Gamepad',
     price: 550,
     discountedPrice: null,
     discount: null,
@@ -48,7 +48,7 @@ const wishlistProducts = [
   {
     id: 4,
     image: jacket,
-    title: 'Quilted Satin Jacket',
+    name: 'Quilted Satin Jacket',
     price: 750,
     discountedPrice: null,
     discount: null,
@@ -62,7 +62,7 @@ const recommendedProducts = [
   {
     id: 5,
     image: laptop,
-    title: 'ASUS FHD Gaming Laptop',
+    name: 'ASUS FHD Gaming Laptop',
     price: 1160,
     discountedPrice: 960,
     rating: 5,
@@ -73,7 +73,7 @@ const recommendedProducts = [
   {
     id: 6,
     image: monitor,
-    title: 'IPS LCD Gaming Monitor',
+    name: 'IPS LCD Gaming Monitor',
     price: 1160,
     discountedPrice: null,
     rating: 5,
@@ -84,7 +84,7 @@ const recommendedProducts = [
   {
     id: 7,
     image: havitGamepad,
-    title: 'HAVIT HV-G92 Gamepad',
+    name: 'HAVIT HV-G92 Gamepad',
     price: 560,
     discountedPrice: null,
     rating: 5,
@@ -95,7 +95,7 @@ const recommendedProducts = [
   {
     id: 8,
     image: keyboard,
-    title: 'AK-900 Wired Keyboard',
+    name: 'AK-900 Wired Keyboard',
     price: 200,
     discountedPrice: null,
     rating: 5,
@@ -112,7 +112,7 @@ function WishlistPage() {
   };
 
   return (
-    <div className="container mx-auto p-4 lg:px-12 my-12 font-montserrat py-12">
+    <div className="max-w-7xl mx-auto px-4 font-montserrat py-20">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-2xl font-bold">Wishlist ({wishlistProducts.length})</h2>
         <button 
@@ -139,7 +139,11 @@ function WishlistPage() {
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
         {recommendedProducts.map((item) => (
-          <ProductCard key={item.id} product={item} />
+         <ProductCard 
+            key={item.id} 
+            product={item} 
+            className="p-4"
+        />
         ))}
       </div>
     </div>

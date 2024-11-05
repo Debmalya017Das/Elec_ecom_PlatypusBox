@@ -1,10 +1,12 @@
 import React from 'react';
 import { Heart, Eye } from 'lucide-react';
 import DP from '../pages/Homepage/home_assets/DP.png'
+// import ProdDesc from '../pages/ProductDesc/ProdDesc';
+import { Link } from 'react-router-dom';
 
-const ProductCard = ({ product }) => {
+const ProductCard = ({ product ={}}) => {
   return (
-    <div className="relative group  rounded-lg py-4 transition-all duration-300 hover:shadow-lg flex flex-col h-full">
+    <div className="relative group  rounded-lg py-4 transition-all duration-300 hover:shadow-lg flex flex-col h-full font-montserrat">
 
       {product.isNew && (
         <span className="absolute top-2 left-2 z-10 bg-green-400 text-white text-xs px-2 py-1 rounded">
@@ -30,9 +32,9 @@ const ProductCard = ({ product }) => {
           <button className="p-2 bg-white rounded-full shadow hover:bg-gray-100">
             <Heart className="w-4 h-4" />
           </button>
-          <button className="p-2 bg-white rounded-full shadow hover:bg-gray-100">
+          <Link to='/info'><button className="p-2 bg-white rounded-full shadow hover:bg-gray-100">
             <Eye className="w-4 h-4" />
-          </button>
+          </button></Link>
         </div>
 
         <div className="absolute inset-x-0 bottom-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100">
